@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電費計算機 | 住宅用電費</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>家庭用電費計算機</h1>
+        <p class="subtitle">根據台電113年4月1日實施的住宅用電價表計算。</p>
+
+        <div class="input-group">
+            <label for="kilowatt-hours">請輸入您的用電度數 (單位: 度):</label>
+            <input type="number" id="kilowatt-hours" placeholder="例如: 450" min="0">
+        </div>
+
+        <div class="input-group">
+            <label for="is-summer">選擇月份:</label>
+            <select id="is-summer">
+                <option value="false">非夏季電價 (10月1日 - 5月31日)</option>
+                <option value="true">夏季電價 (6月1日 - 9月30日)</option>
+            </select>
+        </div>
+
+        <button onclick="calculate()">計算電費</button>
+
+        <div class="result-box" id="result-box">
+            <p><strong>您的電費約為:</strong></p>
+            <p id="total-bill"></p>
+        </div>
+        
+        <div class="calculation-details">
+            <p><strong>計算細項：</strong></p>
+            <pre id="calculation-note"></pre>
+        </div>
+    </div>
+
+    <footer>
+        <p>資料來源: 台灣電力公司官網。計算結果僅供參考，實際費用請以帳單為準。</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #1e3a8a;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #1e3a8a;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #1e3a8a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1c4587;
+    transform: translateY(-2px);
+}
+
+.result-box {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.result-box strong {
+    color: #1e3a8a;
+    font-size: 1.2em;
+}
+
+#total-bill {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #10b981;
+    margin-top: 10px;
+}
+
+.calculation-details {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eef2ff;
+    border: 1px solid #c7d2fe;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.calculation-details p {
+    color: #312e81;
+    font-weight: 600;
+}
+
+#calculation-note {
+    white-space: pre-wrap;
+    font-size: 0.9em;
+    color: #4b5563;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #999;
+    font-size: 0.8em;
+}
